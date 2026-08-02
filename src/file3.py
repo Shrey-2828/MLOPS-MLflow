@@ -42,7 +42,6 @@ with mlflow.start_run() as parent:
     best_param=gd.best_params_
     best_score=gd.best_score_
     
-    
     mlflow.set_tag('author','shrey patel')
     mlflow.log_artifact(__file__)
     mlflow.log_metric("accuracy",best_score)
